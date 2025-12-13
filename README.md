@@ -1,6 +1,6 @@
 # Emotional Chatbot Using Python
 
-In India, where mental health care can be costly and limited, **emotional support chatbots** offer a practical, affordable, and accessible solution.  
+In India, where mental health care can be expensive and limited, **emotional support chatbots** offer a practical, affordable, and accessible solution.  
 This project demonstrates how a Python-based chatbot can use **regular expressions** to understand user input and provide empathetic, relevant responses — bridging the gap in mental health resources.
 
 ---
