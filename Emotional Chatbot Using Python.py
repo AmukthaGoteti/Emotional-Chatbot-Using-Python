@@ -4,8 +4,6 @@ import random
 patterns = {
 r'hi': ['Hello!'],
 
-23 of 29
-
 r'hello': ['Hi there!'],
 r'hey': ['Hey!'],
 r'how are you': ["I'm just a chatbot, but I'm here to help!", "I'm
@@ -58,8 +56,6 @@ r'(.*) travel': ["Travelling is exciting! Where would you like to go
 or share your travel experiences with me?"],
 r'(.*) food': ["Food is a great topic! What's your favourite
 cuisine?"],
-
-24 of 29
 r'(.*) Italian food': ["Italian cuisine is known for its delicious
 pasta and pizza."],
 r'(.*) Chinese food': ["Chinese food offers a wide range of
@@ -116,7 +112,6 @@ r'(.*) volleyball': ["Volleyball is a fun team sport. Have you played
 volleyball or watched volleyball matches?"],
 r'(.*) cricket': ["Cricket is hugely popular in many countries."],
 
-25 of 29
 r'(.*) rugby': ["Rugby is a rugged sport."], r'(.*) art': ["Art is a
 wonderful form of creativity."],
 r'(.*) career advice': ["Planning your career path is crucial. How
@@ -169,8 +164,6 @@ today?"
 def main():
 print("Emotional Support Chatbot: Hello! How can I assist you
 today?")
-
-26 of 29
 
 print("Type 'goodbye' to end the conversation.")
 while True:
