@@ -1,104 +1,114 @@
-# Emotional Chatbot Using Python
+# 🎮 Tic-Tac-Toe (Python GUI)
 
-In India, where mental health care can be expensive and limited, **emotional support chatbots** offer a practical, affordable, and accessible solution.  
-This project demonstrates how a Python-based chatbot can use **regular expressions** to understand user input and provide empathetic, relevant responses — bridging the gap in mental health resources.
+A simple **Tic-Tac-Toe game built using Python and Tkinter**, designed to demonstrate GUI development, event-driven programming, and basic game logic in Python.
 
----
-
-## 📚 About the Project
-This chatbot is designed to:
-- Engage users in supportive conversations.
-- Provide predefined, empathetic responses based on detected input patterns.
-- Allow users to start and end a conversation easily (type `goodbye` to exit).
-
-By using **pattern matching** through Python’s `re` module, it analyses messages and responds in a way that feels personal and emotionally supportive.
+This project is ideal for beginners learning Python GUIs and for showcasing a **clean, functional mini-project** in portfolios or interviews.
 
 ---
 
-## 🛠 Features
-- 💬 **Text-based interaction** — Simply type and chat in the terminal.
-- 🧠 **Pattern recognition** — Matches user input to emotional triggers using regex.
-- ❤️ **Empathetic responses** — Tailored to provide emotional comfort.
-- 🚪 **Easy exit** — End the conversation by typing `goodbye`.
+## 📌 Features
+
+* Two-player gameplay (**X vs O**)
+* Interactive **graphical user interface (GUI)**
+* Automatic **win detection**
+* **Draw detection**
+* One-click **game reset**
+* Simple, readable, and modular code structure
 
 ---
 
-## 📦 Requirements
-- Python 3.x  
-- No external libraries required (uses built-in Python modules).
+## 🛠️ Technologies Used
+
+* **Python 3**
+* **Tkinter** (Python’s standard GUI library)
 
 ---
 
-## 🚀 Installation & Usage
-
-### 1. Clone the repository
-```bash
-git clone https://github.com/yourusername/Emotional-Chatbot-Using-Python.git
-````
-
-### 2. Navigate to the project folder
+## 📂 Project Structure
 
 ```bash
-cd Emotional-Chatbot-Using-Python
+├── Tic_Tac_Toe.py
+└── README.md
 ```
 
-### 3. Run the chatbot
+---
+
+## ▶️ How to Run
+
+### Prerequisites
+
+* Python **3.9 or higher**
+* Tkinter (comes pre-installed with Python)
+
+### Run the Game
 
 ```bash
-python chatbot.py
+python Tic_Tac_Toe.py
 ```
 
-### 4. Start chatting
-
-Type your messages, and receive supportive replies.
-To exit, simply type:
-
-```text
-goodbye
-```
+A window will open with a 3×3 Tic-Tac-Toe board.
 
 ---
 
-## 🗂 How It Works
+## 🎯 How the Game Works
 
-1. The chatbot uses **regular expressions** to detect keywords or patterns in user messages.
-2. Each pattern has a **predefined response** stored in a dictionary or list.
-3. When a match is found, the chatbot replies with the corresponding supportive message.
-4. If no match is found, it gives a default empathetic response.
+* The game starts with **Player X**
+* Players take turns clicking on empty cells
+* The game checks for:
 
----
+  * Horizontal wins
+  * Vertical wins
+  * Diagonal wins
+* A popup message appears when:
 
-## 🔗 Applications
-
-* Mental health awareness campaigns.
-* Emotional first-aid for individuals without access to therapy.
-* Educational tools for demonstrating chatbot logic.
-
----
-
-## 📌 Example Interaction
-
-```
-You: I feel lonely
-Bot: I’m sorry you’re feeling this way. Remember, you’re not alone — I’m here to listen.
-
-You: goodbye
-Bot: Take care of yourself. Remember, you matter.
-```
+  * A player wins
+  * The game ends in a draw
+* The board resets automatically after game completion
+* You can also reset the game manually using the **Reset Game** button
 
 ---
 
-## 🤝 Contributing
+## 🧠 Core Logic Overview
 
-Contributions are welcome! You can:
+### Board Representation
 
-* Add new emotional patterns and responses.
-* Improve regex matching for better accuracy.
-* Enhance the conversation flow.
+* The board is stored as a **1D list of 9 elements**
+* Each index corresponds to a cell in the 3×3 grid
+
+### Win Detection
+
+* Predefined winning index combinations are checked after every move
+
+### Event Handling
+
+* Each button click updates:
+
+  * The board state
+  * The UI text
+  * The current player
 
 ---
 
-## 💡 Acknowledgements
+## 🚀 Learning Outcomes
 
-* Inspired by the need for affordable mental health solutions in India.
-* Uses Python's `re` module for pattern-based chatbot interactions.
+By building this project, you will learn:
+
+* Creating GUIs using **Tkinter**
+* Handling **button events**
+* Managing game state
+* Implementing conditional logic
+* Writing clean, modular Python functions
+
+---
+
+## 🔧 Possible Enhancements
+
+* Single-player mode (Player vs Computer)
+* Score tracking
+* Highlight winning combinations
+* Improved UI styling
+* Sound effects
+
+---
+
+**Happy coding and game building! 🎉**
