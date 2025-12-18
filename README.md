@@ -1,114 +1,101 @@
-# 🎮 Tic-Tac-Toe (Python GUI)
+# 🧠 Emotional Support Chatbot (Python)
 
-A simple **Tic-Tac-Toe game built using Python and Tkinter**, designed to demonstrate GUI development, event-driven programming, and basic game logic in Python.
+A simple yet thoughtfully designed **rule-based Emotional Support Chatbot** built using Python.
+This chatbot uses **regular expressions** and **randomized responses** to simulate empathetic, conversational interactions across emotional, motivational, and everyday topics.
 
-This project is ideal for beginners learning Python GUIs and for showcasing a **clean, functional mini-project** in portfolios or interviews.
+It is ideal for beginners learning **Python**, **regex**, and **basic conversational AI logic**, while also demonstrating how software can be used to provide supportive human-like interactions.
 
----
+## ✨ Features
 
-## 📌 Features
+* Responds to **greetings, farewells, and casual conversation**
+* Detects and reacts to **emotional states** such as:
 
-* Two-player gameplay (**X vs O**)
-* Interactive **graphical user interface (GUI)**
-* Automatic **win detection**
-* **Draw detection**
-* One-click **game reset**
-* Simple, readable, and modular code structure
+  * Sadness, anxiety, stress, loneliness, anger, fear
+* Provides **motivation and encouragement**
+* Covers common topics:
 
----
+  * Career, interviews, studies, coding, AI, health, hobbies, travel, food, music
+* Uses **randomized replies** to avoid repetitive responses
+* Clean, readable, and easily extensible code structure
 
 ## 🛠️ Technologies Used
 
 * **Python 3**
-* **Tkinter** (Python’s standard GUI library)
+* `re` — for pattern matching using regular expressions
+* `random` — for selecting varied responses
 
----
+No external libraries are required.
 
 ## 📂 Project Structure
 
-```bash
-├── Tic_Tac_Toe.py
-└── README.md
+```text
+├── chatbot.py        # Main chatbot implementation
+└── README.md         # Project documentation
 ```
 
----
+## 🚀 How It Works
+
+1. User input is taken from the command line.
+2. Input is converted to lowercase and matched against predefined **regex patterns**.
+3. If a pattern matches, a **random response** from the corresponding list is returned.
+4. If no pattern matches, a default supportive response is shown.
+5. The conversation continues until the user types **bye** or **goodbye**.
 
 ## ▶️ How to Run
 
-### Prerequisites
+1. Clone the repository:
 
-* Python **3.9 or higher**
-* Tkinter (comes pre-installed with Python)
+   ```bash
+   git clone https://github.com/your-username/emotional-support-chatbot.git
+   ```
 
-### Run the Game
+2. Navigate to the project directory:
 
-```bash
-python Tic_Tac_Toe.py
+   ```bash
+   cd emotional-support-chatbot
+   ```
+
+3. Run the chatbot:
+
+   ```bash
+   python chatbot.py
+   ```
+
+## 💬 Sample Interaction
+
+```text
+You: I feel stressed
+Chatbot: Burnout is a sign you’ve been pushing hard. Rest matters too.
+
+You: I am studying for exams
+Chatbot: Exams can be stressful. Preparation and calm thinking help a lot.
+
+You: goodbye
+Chatbot: Goodbye! Take care.
 ```
 
-A window will open with a 3×3 Tic-Tac-Toe board.
+## 🎯 Learning Outcomes
 
----
+By working with this project, you will:
 
-## 🎯 How the Game Works
+* Understand **regex-based intent matching**
+* Learn how rule-based chatbots function
+* Improve Python control flow and string handling
+* Design empathetic response logic
+* Build a foundation for advanced NLP or AI chatbots
 
-* The game starts with **Player X**
-* Players take turns clicking on empty cells
-* The game checks for:
+## 🔮 Possible Enhancements
 
-  * Horizontal wins
-  * Vertical wins
-  * Diagonal wins
-* A popup message appears when:
+* Add sentiment analysis using NLP libraries
+* Store conversation history
+* Convert to a GUI or web-based chatbot
+* Integrate speech-to-text and text-to-speech
+* Use machine learning for intent classification
 
-  * A player wins
-  * The game ends in a draw
-* The board resets automatically after game completion
-* You can also reset the game manually using the **Reset Game** button
+## 🤝 Contribution
 
----
+Contributions are welcome. Feel free to:
 
-## 🧠 Core Logic Overview
-
-### Board Representation
-
-* The board is stored as a **1D list of 9 elements**
-* Each index corresponds to a cell in the 3×3 grid
-
-### Win Detection
-
-* Predefined winning index combinations are checked after every move
-
-### Event Handling
-
-* Each button click updates:
-
-  * The board state
-  * The UI text
-  * The current player
-
----
-
-## 🚀 Learning Outcomes
-
-By building this project, you will learn:
-
-* Creating GUIs using **Tkinter**
-* Handling **button events**
-* Managing game state
-* Implementing conditional logic
-* Writing clean, modular Python functions
-
----
-
-## 🔧 Possible Enhancements
-
-* Single-player mode (Player vs Computer)
-* Score tracking
-* Highlight winning combinations
-* Improved UI styling
-* Sound effects
-
----
-
-**Happy coding and game building! 🎉**
+* Add new conversation patterns
+* Improve response quality
+* Refactor or optimize the logic
